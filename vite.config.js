@@ -8,6 +8,8 @@ export default defineConfig({
   base: "/HowksCute-Anime-react-API/",
   root: './',
   build: {
+    outDir: 'dist',
+    emptyOutDir: true,
     rollupOptions: {
       input: '/public/index.html'  // Explicit path
     }
