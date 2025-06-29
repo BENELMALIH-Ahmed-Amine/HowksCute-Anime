@@ -6,12 +6,10 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss(),],
   base: "/HowksCute-Anime-react-API/",
-  root: './',
+  publicDir: '../public',
+  root: './src',
   build: {
     outDir: 'dist',
-    emptyOutDir: true,
-    rollupOptions: {
-      input: '/public/index.html'  // Explicit path
-    }
+    emptyOutDir: true
   }
 })
